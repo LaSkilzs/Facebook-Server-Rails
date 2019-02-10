@@ -1,0 +1,11 @@
+primary_key,name,image,details,user_id
+1,Cariana Carvalho,"https://randomuser.me/api/portraits/thumb/women/56.jpg",profile picture,1
+2,Greta  Førre,"https://randomuser.me/api/portraits/women/15.jpg",profile picture,2
+3,Amanda Autio,"https://randomuser.me/api/portraits/women/80.jpg",profile picture,3
+4,Devin Bowman,"https://randomuser.me/api/portraits/men/24.jpg",profile picture,4
+5,Liam Hughes,"https://randomuser.me/api/portraits/men/68.jpg",profile picture,5
+6,Bruno Lucas,"https://randomuser.me/api/portraits/men/56.jpg",profile picture,6
+7,Roberto Bailey,"https://randomuser.me/api/portraits/men/77.jpg",profile picture,7
+8,Paige Jones,"https://randomuser.me/api/portraits/women/82.jpg",profile picture,8
+9,Jared Hill,"https://randomuser.me/api/portraits/men/72.jpg",profile picture,9
+10,Kristen Lowe,"https://randomuser.me/api/portraits/women/0.jpg",profile picture,10

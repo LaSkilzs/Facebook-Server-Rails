@@ -2,8 +2,9 @@ require 'byebug'
 
 class ApplicationController < ActionController::API
   include ExceptionHandler
+  
   JWT_SECRET = Rails.application.secret_key_base.to_s
-  before_action :authorized, except: [:welcome]
+  before_action :authorized, except: [:welcome, :index, :show]
 
   def encode_token(payload)
     JWT.encode(payload, "flobble")
@@ -45,7 +46,7 @@ class ApplicationController < ActionController::API
   end
 
   def welcome
-    render json: {message: "Please log in"}
+    render json: { message: "Please log in" }
   end
 
 end

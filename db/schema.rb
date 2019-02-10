@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_09_161547) do
+ActiveRecord::Schema.define(version: 2019_02_10_033356) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 2019_02_09_161547) do
     t.datetime "updated_at", null: false
     t.index ["post_id"], name: "index_comments_on_post_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "followers", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "follower_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["follower_id"], name: "index_followers_on_follower_id"
+    t.index ["user_id"], name: "index_followers_on_user_id"
   end
 
   create_table "friends", force: :cascade do |t|
@@ -73,6 +82,15 @@ ActiveRecord::Schema.define(version: 2019_02_09_161547) do
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
+  create_table "profile_photos", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["profile_id"], name: "index_profile_photos_on_profile_id"
+    t.index ["user_id"], name: "index_profile_photos_on_user_id"
+  end
+
   create_table "profiles", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -82,6 +100,11 @@ ActiveRecord::Schema.define(version: 2019_02_09_161547) do
     t.string "interests"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "address"
+    t.date "birthday"
+    t.string "phone"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -94,6 +117,8 @@ ActiveRecord::Schema.define(version: 2019_02_09_161547) do
 
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
+  add_foreign_key "followers", "followers"
+  add_foreign_key "followers", "users"
   add_foreign_key "friends", "users"
   add_foreign_key "like_comments", "posts"
   add_foreign_key "like_comments", "users"
@@ -101,4 +126,6 @@ ActiveRecord::Schema.define(version: 2019_02_09_161547) do
   add_foreign_key "liked_posts", "users"
   add_foreign_key "photos", "users"
   add_foreign_key "posts", "users"
+  add_foreign_key "profile_photos", "profiles"
+  add_foreign_key "profile_photos", "users"
 end
