@@ -1,11 +1,11 @@
-primary_key,name,address,Birthday,phone,location,movie,animal,sport,interests,user_id
-1,Cariana Carvalho,5799 Avenida d.Ppedro ii,1951-04-02,(72) 1188-6786,"Gravataí,  Rio Grande do Norte",Moon,,basketball,nonprofit,1
-2,Greta  Førre,8071 Krumgata,1947-11-15,62-299-102,"Finnestad, Sør-trøndelag",Blackfish,,cricket,animals,2
-3,Amanda Autio,951 Korkeavuorenkatu,2007-12-16,041-585-91-45,"Kempele, Southern Ostrobothnia",Horrible Bosses 2,,soccer,bitcoin,3
-4,Devon Bowman,8819 Royal lane,1947-07-21,(110)-170-3425,"Philadelphia, Kentucky",Pulp Fiction,,football,tech,4
-5,Liam Hughes,7250 Puhinui Road,1950-02-01,(446)-580-9788,"Tauranga, Waikato",Primal Fear,,tennis,arts,5
-6,Bruno Lucas,3552 Rue Docteur-Bonhomme,1975-06-22,(196)-070-7520,"Wynigen, Obwalden",Ferris Bueller's Day Off,,track-n-field,religion,6
-7,Roberto Bailey,5496 Albert  Road,1970-04-19,(011)-578-3813,"Kinsealy-Drinan, Kildare",Crash,,swimming,music,7
-8,Paige Jones,7422 Chatham Road,1993-10-27,(754)-867-3575,"Porirua, Hawke's Bay",American Beauty,,gymnastics,exercise,8
-9,Jared Hiill,3422 New Road,1987-07-20,017684 42105,"Hereford, Cleveland",127 Hours,,fencing,fishing,9
-10,Kristen Lowe,9732 Oak Ridge Lane,1970-01-11,(559)-887-8375,"Rio Rancho, Kansas",Ocean's Eleven,,baseball,reading,10
+primary_key,name,address,dob,phone,location,movie,animal,sport,interests,image1,image2,followers,friends,user_id
+1,Cariana Carvalho,5799 Avenida d.Ppedro ii,1951-04-02,(72) 1188-6786,"Gravataí,  Rio Grande do Norte",Moon,labradors,basketball,nonprofit,https://randomuser.me/api/portraits/thumb/women/56.jpg,https://images.pexels.com/photos/109919/pexels-photo-109919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,1
+2,Greta  Førre,8071 Krumgata ,1947-11-15,62-299-102,"Finnestad, Sør-trøndelag",Blackfish,bears,cricket,animals,https://randomuser.me/api/portraits/women/15.jpg,https://images.pexels.com/photos/270186/pexels-photo-270186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,2
+3,Amanda Autio,951 Korkeavuorenkatu,2007-12-16,041-585-91-45,"Kempele, Southern Ostrobothnia",Horrible Bosses 2,tigers,soccer,bitcoin,https://randomuser.me/api/portraits/women/80.jpg,https://images.pexels.com/photos/977460/pexels-photo-977460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,3
+4,Devon Bowman,8819 Royal lane,1947-07-21,(110)-170-3425,"Philadelphia, Kentucky",Pulp Fiction,german shephards,football,tech,https://randomuser.me/api/portraits/men/24.jpg,https://images.pexels.com/photos/88650/pexels-photo-88650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,4
+5,Liam Hughes,7250 Puhinui Road,1950-02-01,(446)-580-9788,"Tauranga, Waikato",Primal Fear,hamster,tennis,arts,https://randomuser.me/api/portraits/men/68.jpg,https://images.pexels.com/photos/1165702/pexels-photo-1165702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,5
+6,Bruno Lucas,3552 Rue Docteur-Bonhomme,1975-06-22,(196)-070-7520,"Wynigen, Obwalden",Ferris Bueller's Day Off,fish,track-n-field,religion,https://randomuser.me/api/portraits/men/56.jpg,https://images.pexels.com/photos/772945/pexels-photo-772945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,6
+7,Roberto Bailey,5496 Albert  Road,1970-04-19,(011)-578-3813,"Kinsealy-Drinan, Kildare",Crash,horse,swimming,music,https://randomuser.me/api/portraits/men/77.jpg,https://images.pexels.com/photos/1476962/pexels-photo-1476962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,7
+8,Paige Jones,7422 Chatham Road,1993-10-27,(754)-867-3575,"Porirua, Hawke's Bay",American Beauty,chow chow,gymnastics,exercise,https://randomuser.me/api/portraits/women/82.jpg,https://images.pexels.com/photos/1661817/pexels-photo-1661817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,8
+9,Jared Hiill,3422 New Road,1987-07-20,017684 42105,"Hereford, Cleveland",127 Hours,cat,fencing,fishing,https://randomuser.me/api/portraits/men/72.jpg,https://images.pexels.com/photos/1587660/pexels-photo-1587660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,0,0,9
+10,Kristen Lowe,9732 Oak Ridge Lane,1970-01-11,(559)-887-8375,"Rio Rancho, Kansas",Ocean's Eleven,doberman,baseball,reading,https://randomuser.me/api/portraits/women/0.jpg,https://images.pexels.com/photos/1648396/pexels-photo-1648396.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500,0,0,10

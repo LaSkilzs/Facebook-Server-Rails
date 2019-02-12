@@ -18,7 +18,7 @@ namespace :import do
     filename = File.join Rails.root, 'db/csv/profiles.csv'
 
     CSV.foreach(filename, headers: true) do |row|
-      Profile.create(name: row['name'], address: row['address'], birthday: row['birthday'], phone: row['phone'], location: row['location'], movie: row['movie'], animal: row['animal'], sport: row['sport'], interests: row['interests'], user_id: row['user_id'])
+      Profile.create(name: row['name'], address: row['address'], birthday: row['birthday'], phone: row['phone'], location: row['location'], movie: row['movie'], animal: row['animal'], sport: row['sport'], interests: row['interests'], image1: row['image1'], image2: row['image2'], friends: row['friends'], followers: row['followers'], user_id: row['user_id'])
     end
   end
 
@@ -28,7 +28,7 @@ namespace :import do
     filename = (filename[1].to_s) + '/'+ (filename[2])
 
     CSV.foreach(filename, headers: true) do |row|
-      ProfilePhoto.create(user_id: row['user_id'], profile_id: row['profile_id'])
+      ProfilePhoto.create(photo_id: row['photo_id'], profile_id: row['profile_id'])
     end
   end
 
@@ -38,7 +38,7 @@ namespace :import do
     filename = (filename[1].to_s) + '/'+ (filename[2])
 
     CSV.foreach(filename, headers: true) do |row|
-      Post.create(post: row['post'], user_id: row['user_id'])
+      Post.create(post: row['post'], likes: row['likes'].to_i, user_id: row['user_id'])
     end
   end
 
@@ -66,7 +66,7 @@ namespace :import do
   task likecomments: :environment do 
     filename = File.join Rails.root,'db/csv/likecomments.csv'
     CSV.foreach(filename, headers: true) do |row|
-      LikeComment.create(user_id: row['user_id'], post_id: row['post_id'])
+      LikeComment.create(user_id: row['user_id'], comment_id: row['comment_id'])
     end
   end
 
@@ -75,8 +75,25 @@ namespace :import do
     filename = File.join Rails.root, 'db/csv/comments.csv'
 
     CSV.foreach(filename, headers: true) do |row|
-      Comment.create(comment: row['comment'], post_id: row['post_id'], user_id: row['user_id'])
+      Comment.create(comment: row['comment'], post_id: row['post_id'], likes: row['likes'].to_i, user_id: row['user_id'])
     end
   end
 
+  desc "Import comments from csv"
+  task friends: :environment do 
+    filename = File.join Rails.root, 'db/csv/friends.csv'
+
+    CSV.foreach(filename, headers: true) do |row|
+      Friend.create(friend: row['friend'], user_id: row['user_id'], mutual_friends: row['mutual_friends'], follower_id: row['follower_id'])
+    end
+  end
+
+  desc "Import comments from csv"
+  task followers: :environment do 
+    filename = File.join Rails.root, 'db/csv/followers.csv'
+
+    CSV.foreach(filename, headers: true) do |row|
+      Follower.create(friend: row['friend'], user_id: row['user_id'], mutual_friends: row['mutual_friends'], follower_id: row['follower_id'])
+    end
+  end
 end

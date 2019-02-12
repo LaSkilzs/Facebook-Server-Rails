@@ -35,7 +35,7 @@ module Api
 
       private
       def post_params
-        params.(:post).permit(:post, :user_id)
+        params.(:post).permit(:post, :likes, :user_id)
       end
 
     end

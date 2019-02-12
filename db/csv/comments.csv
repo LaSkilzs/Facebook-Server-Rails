@@ -1,11 +1,11 @@
-primary,comment,user_id,post_id
-1,nice pic,10,1
-2,hahahaha,9,2
-3,how are you,8,3
-4,what been up,7,4
-5,thats a trip!,6,5
-6,i need to hear that,5,6
-7,facts!!!!,4,7
-8,morning motivation,3,8
-9,keep moving forward,2,9
-10,my inspiration,1,10
+primary,comment,likes,user_id,post_id
+1,nice pic,0,10,1
+2,hahahaha,0,9,2
+3,how are you,0,8,3
+4,what been up,0,7,4
+5,thats a trip!,0,6,5
+6,i need to hear that,0,5,6
+7,facts!!!!,0,4,7
+8,morning motivation,0,3,8
+9,keep moving forward,0,2,9
+10,my inspiration,0,1,10

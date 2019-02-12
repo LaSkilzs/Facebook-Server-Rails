@@ -35,7 +35,7 @@ module Api
 
       private
       def profile_params
-        params.(:profile).permit(:name, :address, :birthday, :phone, :location, :movie, :animal, :sport, :interests, :user_id)
+        params.(:profile).permit(:name, :address, :birthday, :phone, :location, :movie, :animal, :sport, :interests, :image1, :image2, :friends, :followers, :user_id)
       end
     end
   end

@@ -1,11 +1,11 @@
-primary_key,name,image,details,user_id
-1,Cariana Carvalho,"https://randomuser.me/api/portraits/thumb/women/56.jpg",profile picture,1
-2,Greta  Førre,"https://randomuser.me/api/portraits/women/15.jpg",profile picture,2
-3,Amanda Autio,"https://randomuser.me/api/portraits/women/80.jpg",profile picture,3
-4,Devin Bowman,"https://randomuser.me/api/portraits/men/24.jpg",profile picture,4
-5,Liam Hughes,"https://randomuser.me/api/portraits/men/68.jpg",profile picture,5
-6,Bruno Lucas,"https://randomuser.me/api/portraits/men/56.jpg",profile picture,6
-7,Roberto Bailey,"https://randomuser.me/api/portraits/men/77.jpg",profile picture,7
-8,Paige Jones,"https://randomuser.me/api/portraits/women/82.jpg",profile picture,8
-9,Jared Hill,"https://randomuser.me/api/portraits/men/72.jpg",profile picture,9
-10,Kristen Lowe,"https://randomuser.me/api/portraits/women/0.jpg",profile picture,10
+primary_key,name,image,detail,user_id
+1,Cariana Carvalho,https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,1
+2,Greta  Førre,https://images.pexels.com/photos/290164/pexels-photo-290164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,2
+3,Amanda Autio,https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,3
+4,Devin Bowman,https://images.pexels.com/photos/37860/border-collie-jump-water-british-sheepdog-37860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,4
+5,Liam Hughes,https://images.pexels.com/photos/39855/lamborghini-brno-racing-car-automobiles-39855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,5
+6,Bruno Lucas,https://images.pexels.com/photos/80465/ford-mustang-auto-vehicle-80465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,6
+7,Roberto Bailey,https://images.pexels.com/photos/248687/pexels-photo-248687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,7
+8,Paige Jones,https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,8
+9,Jared Hill,https://images.pexels.com/photos/40904/bmw-k-1300-metallic-motorcycle-40904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,9
+10,Kristen Lowe,https://images.pexels.com/photos/681795/pexels-photo-681795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940,pets,10
