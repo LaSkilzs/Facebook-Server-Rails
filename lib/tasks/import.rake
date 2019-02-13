@@ -38,7 +38,7 @@ namespace :import do
     filename = (filename[1].to_s) + '/'+ (filename[2])
 
     CSV.foreach(filename, headers: true) do |row|
-      Post.create(post: row['post'], likes: row['likes'].to_i, user_id: row['user_id'])
+      Post.create(post: row['post'], likes: row['likes'].to_i, text: row['text'], user_id: row['user_id'])
     end
   end
 
